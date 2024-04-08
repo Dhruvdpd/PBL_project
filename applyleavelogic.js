@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded',  function() {
         leaveForm.addEventListener('submit', async function(event) {
             event.preventDefault(); // Prevent the default form submission behavior
             // Gather form data
+            console.log("submit button in apply leave clicked");
             const formData = {
                 name: document.getElementById('name').value,
                 email: document.getElementById('email').value,

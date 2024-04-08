@@ -49,6 +49,7 @@ router.post("/updateStatus" , async (req,res)=>{
     const id = req.body.student_id;
     const leaveId = req.body.leave_id;
     const status = req.body.status;
+    console.log("update stauts route is hitted");
     try {
         // Find the leave by id and leaveId
         const leave = await Leave.findOneAndUpdate(

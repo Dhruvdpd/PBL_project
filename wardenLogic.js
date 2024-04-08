@@ -141,8 +141,12 @@ function attachEventListeners(students) {
                     // Handle approval logic here
                     console.log("render this ");
                     console.log("Approved leave with ID:", leaveRowId, "for student ID:", studentRowId);
-                    const leave_id = parseInt(leaveRowId[leaveRowId.length-1]);
-                    const student_id = parseInt(studentRowId[studentRowId.length-1]);
+                    const arrayLeaveId = leaveRowId.split('-')
+                    const arrayStudentId = studentRowId.split('-')
+                    const leave_id = parseInt(arrayLeaveId[1]);
+                    const student_id = parseInt(arrayStudentId[1]);
+                    console.log(leave_id);
+                    console.log(student_id);
                     const status = "Approved";
                     fetch("http://localhost:3000/leave/updateStatus" , {
                         method : 'POST',
@@ -184,8 +188,10 @@ function attachEventListeners(students) {
                 // Handle rejection logic here
                 console.log("Rejected leave with ID:", leaveRowId, "for student ID:", studentRowId);
                 // Send rejection request to the backend and update the leave status
-                const leave_id = parseInt(leaveRowId[leaveRowId.length-1]);
-                    const student_id = parseInt(studentRowId[studentRowId.length-1]);
+                    const arrayLeaveId = leaveRowId.split('-')
+                    const arrayStudentId = studentRowId.split('-')
+                    const leave_id = parseInt(arrayLeaveId[1]);
+                    const student_id = parseInt(arrayStudentId[1]);
                     const status = "Rejected";
                     fetch("http://localhost:3000/leave/updateStatus" , {
                         method : 'POST',
