@@ -1,3 +1,23 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    border: border-box;
+}
+
+body{
+    background-color: rgb(122, 130, 245);
+
+}
+.logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100px;
+    background-color: aliceblue;
+    z-index: 3;
+}
 .navbar{
     position: fixed;
     top: 0%;
@@ -21,6 +41,12 @@
 
 }
 
+#ca{
+    border: 2px solid  rgba(245, 245, 245, 0.1);
+    background-color: rgba(240, 248, 255, 0.432);
+    
+}
+
 #op2{
     display: flex;
     justify-content: space-around;
@@ -32,43 +58,82 @@ a{
     font-size: large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
-    color: aliceblue;
+}
+#img3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100px;
 }
 
-.container{
-    padding: 0px;
-    background-color:cornsilk;
-    text-align: left;
-    font-size: 17px;
-    margin: 0px;
-    height: 100%;
+.dabba{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
 }
-#c3{
+
+.chota_dabba1{
+    height: 500px;
+    background-color: rgb(255, 253, 253);
+
+
+}
+
+.chota_dabba3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 700px;
+    width: 1200px;
+    background-color: rgb(231, 249, 148);
+    
+
+}
+
+#bdh1{
+    font-size: 48px;
+    font-family: sans-serif;
     position: absolute;
-    left: 32.5%;
-    top: 29.5%;
-    right: 20%;
+    top: 90px;
+    left: 45%;
 }
-#c4{
+
+#bdp1{
+    font-size: 24px;
+    font-family: sans-serif;
     position: absolute;
-    left: 60%;
-    top: 29.5%;
-    right: 20%;
+    top: 30%;
+    left: 10%;
+    color: rgba(245, 245, 245, 0.878);
 }
-#c2{
-    position: absolute;
-    left: 50%;
-    top: 75.5%;
-    right: 20%;
-}
-#c1{
-    position: absolute;
-    left: 20%;
-    top: 75.5%;
-    right: 20%;
-}
-.image-box {
+
+.box{
+    background-color: rgba(255, 255, 255, 0.874);
+    height: 320px;
+    width: 320px;
+    display: flex;
     justify-content: space-between;
-    padding: 20px;
-    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.422) ;
+}
+
+h2{
+    color: black;
+    
+}
+h1{
+    font-size: 36px;
+    
+}
+.chota_dabba2{
+    display: flex;
+    justify-content: left;
+    height: 70px;
+    width: 1200px;
 }

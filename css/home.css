@@ -184,3 +184,34 @@ a{
     flex-direction: column;
     justify-content: space-around;
 }
+
+#b3{
+    
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#b31{
+    color: black;
+    font-size: 48px;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: bottom;
+   
+}
+#b32{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+.b3{
+    color: black;
+}
